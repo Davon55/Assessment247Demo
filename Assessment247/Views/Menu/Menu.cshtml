@@ -1,0 +1,28 @@
+﻿<h2>Menu</h2>
+
+<fieldset>
+    <legend>Menu</legend>
+    @using (Html.BeginForm("Menu", "Menu", FormMethod.Post))
+    {
+    <div id="divMenuDetails"></div>
+    <ol>
+        <li>
+            @Html.Label("Name")
+            @Html.TextBox("txtName")
+        </li>
+        <li>
+            @Html.Label("Calories")
+            @Html.TextBox("txtCalories")
+        </li>
+        <li>
+            @Html.Label("Ingredient1")
+            @Html.TextBox("txtIngredient1")
+        </li>
+        <li>
+            @Html.Label("Ingredient2")
+            @Html.TextBox("Ingredient2")
+        </li>
+    </ol>
+    <button>Submit</button>
+    }
+</fieldset>
